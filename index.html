@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoreOS — Experience Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ================= MOBILE FIXED TOP BAR & DRAWER (< 1024px only) ================= -->
+  <header class="mobile-bar" id="mobileBar">
+    <div></div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#home" data-link>Home</a>
+    <a href="#services" data-link>Services</a>
+    <a href="#works" data-link>Works</a>
+    <a href="#testimonial" data-link>Testimonial</a>
+    <a href="#pricing" data-link>Pricing</a>
+    <a href="#about" data-link>About Us</a>
+    <a href="#contact" data-link class="mobile-talk">Let’s Talk</a>
+  </div>
+
+  <div id="viewport">
+    <div id="stage">
+
+      <!-- ================= BACKGROUND LAYERS ================= -->
+      <img class="abs" src="assets/img/star-pattern.svg" alt="" style="left:-17px;top:823.53px;width:1474px;height:2310.93px;opacity:.2" />
+      <img class="abs" src="assets/img/star-pattern.svg" alt="" style="left:-17px;top:3843.53px;width:1474px;height:2310.93px;opacity:.16" />
+      <img class="abs" src="assets/img/star-pattern.svg" alt="" style="left:-17px;top:6993.53px;width:1474px;height:2310.93px;opacity:.16" />
+      <img class="abs hero-grid" src="assets/img/hero-grid.svg" alt="" style="left:-186.54px;top:179.48px;width:1934.53px;height:600.07px" />
+
+      <div class="abs glow-white" style="left:1231px;top:183px;width:292px;height:136px"></div>
+      <div class="abs glow-white" style="left:-77px;top:146px;width:268px;height:173px"></div>
+      <div class="abs glow-white" style="left:-43px;top:591px;width:362px;height:216px"></div>
+      <div class="abs glow-white" style="left:39px;top:664px;width:1472px;height:189px"></div>
+
+      <!-- ================= NAV ================= -->
+      <nav class="abs nav intro" style="left:478px;top:30px;--d:.05s" id="home">
+        <a href="#home" class="active" data-link>Home</a>
+        <a href="#services" data-link>Services</a>
+        <a href="#works" data-link>Works</a>
+        <a href="#testimonial" data-link>Testimonial</a>
+        <a href="#pricing" data-link>Pricing</a>
+        <a href="#about" data-link>About Us</a>
+      </nav>
+      <a href="#contact" data-link class="abs btn-outline intro magnetic" style="left:1284px;top:20px;--d:.15s">Let’s Talk</a>
+
+      <!-- ================= HERO ================= -->
+      <h1 class="abs hero-title" style="left:327px;top:120px;width:786px;height:162px">
+        <span class="line"><span class="w"><i>Turning</i></span> <span class="w"><i>ideas</i></span> <span class="w"><i>into</i></span> <span class="w"><i class="adinera blue">Impactful</i></span></span>
+        <span class="line"><span class="w"><i class="adinera">Digital</i></span> <span class="w"><i>Products</i></span></span>
+      </h1>
+      <div class="abs underline-draw" style="left:861px;top:189px;width:243px;height:1px"></div>
+
+      <p class="abs hero-sub intro" style="left:538px;top:298px;width:364px;--d:.55s">User-first UI/UX design and development to help <br>you launch, stand out, and grow.</p>
+
+      <div class="abs parallax" data-depth="-14" style="left:132.87px;top:336.17px;width:235.5px;height:128px">
+        <img class="badge intro-pop float-a" src="assets/img/badge-justin.png" alt="Justin Clif — UIUX Designer" style="--d:.9s" />
+      </div>
+      <div class="abs parallax" data-depth="18" style="left:1153.44px;top:221.11px;width:183.5px;height:92.5px">
+        <img class="badge intro-pop float-b" src="assets/img/badge-josef.png" alt="Josef Smith — Flutter Engineer" style="--d:1s" />
+      </div>
+
+      <a href="#contact" data-link class="abs btn-primary btn-cta intro magnetic" style="left:638px;top:382px;width:163.56px;height:48px;--d:.7s">
+        <span>Book a Call</span><img src="assets/img/arrow-cta.svg" alt="" class="cta-arrow" />
+      </a>
+
+      <div class="abs rating intro" style="left:621px;top:484px;--d:.85s">
+        <img src="assets/img/laurel-left.svg" alt="" style="width:33.59px;height:56.09px" />
+        <div class="rating-mid">
+          <div class="rating-avatars">
+            <img src="assets/img/rating-1.png" alt="Clutch" style="left:0" />
+            <img src="assets/img/rating-2.png" alt="Google" style="left:36px" />
+          </div>
+          <div class="rating-row"><span>4.9</span><img src="assets/img/stars.svg" alt="5 stars" style="width:68px;height:12px" /></div>
+        </div>
+        <img src="assets/img/laurel-right.svg" alt="" style="width:33.59px;height:56.09px" />
+      </div>
+
+      <!-- Hero showcase -->
+      <div class="hero-strip" id="heroStrip">
+        <div class="abs hero-card parallax" data-depth="-10" style="left:-30px;top:684.12px;width:273.61px;height:244.64px"><div class="hc-in" style="--d:1.05s"><img src="assets/img/hero-1.png" alt="" /></div></div>
+        <div class="abs hero-card parallax" data-depth="8" style="left:266.14px;top:671.24px;width:152.9px;height:236.59px"><div class="hc-in" style="--d:1.12s"><img src="assets/img/hero-2.png" alt="" /></div></div>
+        <div class="abs hero-card parallax" data-depth="-6" style="left:438.34px;top:695.38px;width:273.61px;height:244.64px"><div class="hc-in" style="--d:1.19s"><img src="assets/img/hero-3.png" alt="" /></div></div>
+        <div class="abs hero-card parallax" data-depth="6" style="left:731.27px;top:659.98px;width:272px;height:244.64px"><div class="hc-in" style="--d:1.26s"><img src="assets/img/hero-4.png" alt="" /></div></div>
+        <div class="abs hero-card parallax" data-depth="-8" style="left:1024.19px;top:701.83px;width:152.9px;height:236.59px"><div class="hc-in" style="--d:1.33s"><img src="assets/img/hero-5.png" alt="" /></div></div>
+        <div class="abs hero-card parallax" data-depth="10" style="left:1198px;top:684.12px;width:272px;height:244.64px"><div class="hc-in" style="--d:1.4s"><img src="assets/img/hero-6.png" alt="" /></div></div>
+      </div>
+
+      <div class="trusted-wrap" id="trustedWrap">
+        <img class="abs reveal trusted-desktop" data-r="fade" src="assets/img/trusted-logos.svg" alt="Trusted by Adobe, Stripe, HubSpot, GitHub, Asana, Gumroad" style="left:292.44px;top:999.5px;width:856px;height:75px" />
+        <div class="trusted-mobile">
+          <img src="assets/img/trusted-row1.svg" alt="Adobe, Stripe, HubSpot" />
+          <img src="assets/img/trusted-row2.svg" alt="GitHub, Asana, Gumroad" />
+        </div>
+      </div>
+
+      <!-- ================= STATS ================= -->
+      <section id="about">
+        <div class="abs stat reveal" data-r="up" style="left:64px;top:1147px;--bg:#DD204B;--bd:linear-gradient(63deg,#F4AFBF 0%,#FB5D81 100%)">
+          <p class="stat-copy" style="left:54px;top:59px">User-first UI/UX design and development to help <br>you launch, stand out, and grow.</p>
+          <div class="stat-num" style="left:1043px;top:21px"><b data-count="5">5</b><span class="plus">+</span><em>Years of Excellence</em></div>
+        </div>
+        <div class="abs stat reveal" data-r="up" style="left:64px;top:1353px;--bg:#204BDD;--bd:linear-gradient(63deg,#5475E7 0%,#7B97F7 100%)">
+          <p class="stat-copy" style="left:54px;top:58px">With a skilled team of designers and developers, <br>we turn ideas into scalable digital products.</p>
+          <div class="stat-num" style="left:1043px;top:20px"><b data-count="25">25</b><span class="plus">+</span><em>Creative Experts</em></div>
+        </div>
+        <div class="abs stat reveal" data-r="up" style="left:64px;top:1559px;--bg:#DD9820;--bd:linear-gradient(63deg,#EBB04A 0%,#E8B863 100%)">
+          <p class="stat-copy" style="left:54px;top:58px">Trusted by startups, SaaS founders, and global <br>brands to deliver products that users love.</p>
+          <div class="stat-num" style="left:1043px;top:20px"><b data-count="100">100</b><span class="plus">+</span><em>Project Delivered</em></div>
+        </div>
+      </section>
+
+      <!-- ================= WORKS ================= -->
+      <section id="works" class="abs dark-band" style="left:0;top:1891px;width:1440px;height:2073px">
+        <article class="abs work reveal tilt" data-r="up" style="left:64px;top:110px;height:565px">
+          <h3 style="top:32px">Lunox — SaaS Dashboard UI</h3>
+          <p style="top:78px">A sleek and responsive SaaS dashboard built for data clarity <br>and seamless user control. Crafted with modular UI <br>components and real-time UX flow.</p>
+          <span class="tag" style="top:170px">Dashboard Design</span>
+          <div class="work-img" style="top:226px"><img src="assets/img/work-lunox.png" alt="Lunox dashboard" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+        <article class="abs work reveal tilt" data-r="up" style="left:736px;top:109px;height:566px;--rd:.12s">
+          <h3 style="top:33px">Fintech Mobile App</h3>
+          <p style="top:79px">A finance app with intuitive UX for tracking, saving, and <br>managing money. Designed to simplify financial decisions <br>for users on the go.</p>
+          <span class="tag" style="top:171px">Mobile APP Design</span>
+          <div class="work-img" style="top:227px"><img src="assets/img/work-fintech.png" alt="Fintech app" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+        <article class="abs work reveal tilt" data-r="up" style="left:64px;top:708px;height:565px">
+          <h3 style="top:32px">NeoStack — Developer Portfolio</h3>
+          <p style="top:78px">A modern portfolio for developers and freelancers to showcase <br>projects, blogs, and achievements with a unique <br>scroll-based layout.</p>
+          <span class="tag" style="top:170px">Web Design</span>
+          <div class="work-img" style="top:226px"><img src="assets/img/work-neostack.png" alt="NeoStack portfolio" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+        <article class="abs work work-featured reveal tilt" data-r="up" style="left:736px;top:707px;height:566px;--rd:.12s">
+          <h3 style="top:33px">Bloom — Wellness App UI</h3>
+          <p style="top:79px">A calming and user-friendly interface for a mindfulness and <br>wellness app. Includes habit tracking, journaling, and <br>meditation flows.</p>
+          <span class="tag" style="top:171px">UIUX Design</span>
+          <div class="work-img" style="top:227px"><img src="assets/img/work-bloom.png" alt="Bloom wellness app" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+        <article class="abs work reveal tilt" data-r="up" style="left:64px;top:1306px;height:565px">
+          <h3 style="top:32px">BoldGrid — Construction Company</h3>
+          <p style="top:78px">Corporate site design for a construction brand, focused on <br>trust, past projects, and conversion-driven <br>contact CTAs.</p>
+          <span class="tag" style="top:170px">Web Design</span>
+          <div class="work-img" style="top:226px"><img src="assets/img/work-boldgrid.png" alt="BoldGrid website" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+        <article class="abs work reveal tilt" data-r="up" style="left:736px;top:1305px;height:566px;--rd:.12s">
+          <h3 style="top:33px">PixelCast — Podcast Hosting Platform</h3>
+          <p style="top:79px">End-to-end UI/UX and development for a platform where <br>creators can publish, manage, and monetize <br>podcasts with ease.</p>
+          <span class="tag" style="top:171px">Product Design</span>
+          <div class="work-img" style="top:227px"><img src="assets/img/work-pixelcast.png" alt="PixelCast platform" /><span class="preview">Full Preview <img src="assets/img/eye.svg" alt="" /></span></div>
+        </article>
+
+        <a href="#works" class="abs btn-primary btn-hug reveal magnetic" data-r="up" style="left:650px;top:1953px;height:48px">See All Project</a>
+      </section>
+
+      <!-- ================= MARQUEE BAND ================= -->
+      <section class="abs marquee-band" style="left:0;top:4096px;width:1440px;height:559px;background:#5377F2">
+        <div class="abs marquee-clip" style="left:0;top:32px;width:1440px;height:32px">
+          <div class="mq-track mq-left" style="left:-5px" data-tags="UIUX,Web,Saas,MobileApp,UXAudit,Design,Code,Branding,Research,Prototype,Motion,Product,Landing"></div>
+        </div>
+        <div class="abs mq-images" id="mqImages" style="left:-101px;top:141px;width:1500px;height:280.04px">
+          <div class="mq-img" style="left:0;top:24.14px;width:273.61px;height:244.64px"><img src="assets/img/mq-1.png" alt="" /></div>
+          <div class="mq-img" style="left:296.14px;top:11.27px;width:152.9px;height:236.59px"><img src="assets/img/mq-2.png" alt="" /></div>
+          <div class="mq-img" style="left:468.34px;top:35.41px;width:273.61px;height:244.64px"><img src="assets/img/mq-3.png" alt="" /></div>
+          <div class="mq-img" style="left:761.27px;top:0;width:272px;height:244.64px"><img src="assets/img/mq-4.png" alt="" /></div>
+          <div class="mq-img" style="left:1054.19px;top:41.84px;width:152.9px;height:236.59px"><img src="assets/img/mq-5.png" alt="" /></div>
+          <div class="mq-img" style="left:1228px;top:24.14px;width:272px;height:244.64px"><img src="assets/img/mq-6.png" alt="" /></div>
+        </div>
+        <div class="abs marquee-clip" style="left:0;top:495px;width:1440px;height:32px">
+          <div class="mq-track mq-right" data-start="-265" data-tags="UIUX,Web,Saas,MobileApp,UXAudit,Design,Code,Branding,Research,Prototype,Motion,Product,Landing"></div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section id="services">
+        <h2 class="abs svc-title reveal" data-r="up" style="left:64px;top:4775px;width:600px">
+          <b>We craft</b> <span class="adinera" style="letter-spacing:-0.03em">digital products</span> <b>that</b><br><b>connect, convert, and scale</b>
+        </h2>
+        <p class="abs svc-sub reveal" data-r="up" style="left:64px;top:4891px;--rd:.1s">From early-stage strategy to polished execution, we help ambitious brands build <br>standout digital experiences with a user-first approach.</p>
+        <a href="#contact" data-link class="abs btn-dark reveal magnetic" data-r="up" style="left:1234px;top:4893px;width:142px;height:48px;--rd:.15s">Contact Us</a>
+
+        <div class="svc-stack">
+          <div class="abs svc-card bordered reveal tilt" data-r="up" style="left:64px;top:4979px;width:421px;height:431px"><img src="assets/img/svc-strategy.png" alt="Product Strategy" /><h3><span class="adinera">Product</span> Strategy</h3></div>
+          <div class="abs svc-card reveal tilt" data-r="up" style="left:510px;top:4979px;width:420px;height:431px;--rd:.1s"><img src="assets/img/svc-design.png" alt="Experience Design" /><h3><span class="adinera">Experience</span> Design</h3></div>
+          <div class="abs svc-card bordered reveal tilt" data-r="up" style="left:955px;top:4979px;width:421px;height:431px;--rd:.2s"><img src="assets/img/svc-build.png" alt="Full-Stack Build" /><h3><span class="adinera">Full-Stack</span> Build</h3></div>
+        </div>
+      </section>
+
+      <!-- ================= PRICING + WHY US ================= -->
+      <section id="pricing" class="abs pricing" style="left:0;top:5552px;width:1440px;height:1506px">
+        <div class="abs blob" style="left:126px;top:-15px;width:419px;height:56px;background:#204BDD"></div>
+        <div class="abs blob" style="left:1016px;top:-15px;width:419px;height:56px;background:#DD204B"></div>
+
+        <div class="abs toggle reveal" data-r="scale" style="left:569px;top:62px">
+          <span class="toggle-pill" id="togglePill"></span>
+          <button class="t-btn active" data-plan="monthly" style="left:8px;width:129px">Monthly</button>
+          <button class="t-btn" data-plan="quarterly" style="left:150px;width:145px">Quarterly</button>
+        </div>
+
+        <div class="abs reveal" data-r="up" style="left:64px;top:180px;width:416px;height:565px">
+          <div class="plan" style="height:565px">
+            <h3>Essentials</h3><p class="plan-sub">Perfect for early-stage founder or small teams</p>
+            <div class="price"><b data-m="$2,200" data-q="$5,940">$2,200</b> <span data-m="/Month" data-q="/Quarter">/Month</span></div>
+            <ul><li>25 hours of dedicated design</li><li>1 concept round + 2 revisions</li><li>Wireframes, mockups &amp; prototypes</li><li>Weekly async updates</li><li>Access to design source files</li></ul>
+            <a href="#contact" data-link class="btn-primary plan-btn" style="top:473px">Book a free call</a>
+          </div>
+        </div>
+
+        <div class="abs splash" style="left:512px;top:180px;width:416px;height:565px"></div>
+        <div class="abs reveal" data-r="up" style="left:512px;top:180px;width:416px;height:583px;--rd:.1s">
+          <div class="plan plan-featured" style="height:583px">
+            <span class="plan-glint"></span>
+            <h3>Growth Mode</h3><p class="plan-sub">Perfect for early-stage founder or small teams</p>
+            <div class="price"><b data-m="$4,300" data-q="$11,610">$4,300</b> <span data-m="/Month" data-q="/Quarter">/Month</span></div>
+            <ul><li>60 hours of design + front-end dev</li><li>Landing page + dashboard UI</li><li>Custom animations &amp; micro-interactions</li><li>Slack communication + Figma access</li><li>Dedicated design + dev team</li><li>Unlimited Design Requests</li><li>Fast turnaround (24–72 hrs)</li><li>Design feedback loops via Loom or Notion</li></ul>
+            <a href="#contact" data-link class="btn-primary plan-btn" style="top:482px">Book a free call</a>
+          </div>
+        </div>
+
+        <div class="abs reveal" data-r="up" style="left:960px;top:180px;width:416px;height:600px;--rd:.2s">
+          <div class="plan" style="height:600px">
+            <h3>Visionary</h3><p class="plan-sub">Perfect for early-stage founder or small teams</p>
+            <div class="price"><b data-m="$6,800" data-q="$18,360">$6,800</b> <span data-m="/Month" data-q="/Quarter">/Month</span></div>
+            <ul><li>120+ hrs creative &amp; dev support</li><li>UI/UX, branding &amp; full-stack build</li><li>UI/UX, branding &amp; full-stack build</li><li>SaaS, dashboard &amp; internal tools</li><li>Dedicated PM, designer &amp; dev team</li><li>UX audits, testing &amp; strategy</li><li>Unlimited requests</li><li>Loom &amp; Notion feedback</li><li>Flexible scaling</li></ul>
+            <a href="#contact" data-link class="btn-primary plan-btn" style="top:508px">Book a free call</a>
+          </div>
+        </div>
+
+        <!-- Why us bento -->
+        <div class="bento-stack" id="bentoStack">
+          <div class="abs bento reveal tilt" data-r="up" style="left:64px;top:863px;width:416px;background:#30427F">
+            <h4 style="left:52px;top:44px">Fast Delivery</h4>
+            <p style="left:52px;top:102px">Get your designs or development tasks done <br>within 2–4 business days, depending <br>on complexity.</p>
+            <img class="cone" src="assets/img/cone-spring.png" alt="" style="left:283.22px;top:153.63px;width:170.84px;height:170.84px" />
+          </div>
+          <div class="abs bento reveal tilt" data-r="up" style="left:512px;top:863px;width:864px;background:#DD204B;--rd:.1s">
+            <img class="cone" src="assets/img/cone-poly.png" alt="" style="left:11.58px;top:60.3px;width:327.61px;height:327.61px" />
+            <h4 style="left:359px;top:53px">Fair &amp; Simple Pricing</h4>
+            <p style="left:359px;top:97px">Straightforward plans. No surprise costs. You always know <br>what you're paying for — and why it matters.</p>
+          </div>
+          <div class="abs bento reveal tilt" data-r="up" style="left:64px;top:1173px;width:864px;background:#DD9820">
+            <h4 style="left:59px;top:53px">Open Collaboration</h4>
+            <p style="left:59px;top:97px">We keep you in the loop with async updates, Loom walkthroughs, <br>and clean feedback cycles. No guesswork.</p>
+            <img class="cone" src="assets/img/cone-chain.png" alt="" style="left:671.59px;top:127.5px;width:230.13px;height:231.14px" />
+          </div>
+          <div class="abs bento reveal tilt" data-r="up" style="left:960px;top:1173px;width:416px;background:#204BDD;--rd:.1s">
+            <h4 style="left:52px;top:44px">Unlimited Revisions</h4>
+            <p style="left:52px;top:102px">We work until it’s right. No extra charges for <br>tweaks or improvements. Your satisfaction <br>is the goal.</p>
+            <img class="cone" src="assets/img/cone-cube.png" alt="" style="left:281px;top:147px;width:137.97px;height:137.97px" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section id="testimonial">
+        <p class="abs t-label reveal" data-r="up" style="left:64px;top:7200px">✨ What Our Clients Say About Us</p>
+        <h2 class="abs t-title reveal" data-r="up" style="left:64px;top:7231px;--rd:.08s">Trusted by growing startups and global brands</h2>
+        <button class="abs t-arrow reveal" data-r="scale" id="tPrev" style="left:1278px;top:7221px" aria-label="Previous"><img src="assets/img/arrow-prev.svg" alt="" /></button>
+        <button class="abs t-arrow reveal" data-r="scale" id="tNext" style="left:1334px;top:7221px;--rd:.08s" aria-label="Next"><img src="assets/img/arrow-next.svg" alt="" /></button>
+
+        <div class="abs t-viewport" style="left:0;top:7270px;width:1440px;height:500px">
+          <div class="t-track" id="tTrack" style="left:64px;top:23px">
+            <div class="t-card reveal" data-r="up"><div class="t-img"><img src="assets/img/testi-1.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:105px" /></div><div class="t-author"><img src="assets/img/avatar-1.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card reveal" data-r="up" style="--rd:.08s"><div class="t-img"><img src="assets/img/testi-2.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:112px" /></div><div class="t-author"><img src="assets/img/avatar-2.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card reveal" data-r="up" style="--rd:.16s"><div class="t-img"><img src="assets/img/testi-3.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:119px" /></div><div class="t-author"><img src="assets/img/avatar-3.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card reveal" data-r="up" style="--rd:.24s"><div class="t-img"><img src="assets/img/testi-4.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:126px" /></div><div class="t-author"><img src="assets/img/avatar-4.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card reveal" data-r="up" style="--rd:.32s"><div class="t-img"><img src="assets/img/testi-5.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:133px" /></div><div class="t-author"><img src="assets/img/avatar-5.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card"><div class="t-img"><img src="assets/img/testi-1.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:105px" /></div><div class="t-author"><img src="assets/img/avatar-1.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+            <div class="t-card"><div class="t-img"><img src="assets/img/testi-2.png" alt="" /><img class="t-play" src="assets/img/play.svg" alt="Play" style="left:112px" /></div><div class="t-author"><img src="assets/img/avatar-2.png" alt="" /><div><b>Daniel Reed</b><span>Founder, Bloom Studio</span></div></div></div>
+          </div>
+          <div class="t-fade" style="left:1093px;top:8px;width:347px;height:497px"></div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section id="faq">
+        <h2 class="abs faq-title reveal" data-r="up" style="left:538px;top:7892px;width:364px">Frequently asked questions</h2>
+        <div class="abs faq-list" style="left:329px;top:7988px;width:782px">
+          <div class="faq open reveal" data-r="up">
+            <button class="faq-q"><span>How does the project get started?</span><i class="faq-ic"></i></button>
+            <div class="faq-a"><p>You share your project brief, we prepare a detailed proposal with timeline and cost, and once confirmed we <br>schedule a kickoff to begin.</p></div>
+          </div>
+          <div class="faq reveal" data-r="up" style="--rd:.06s">
+            <button class="faq-q"><span>What services do we offer?</span><i class="faq-ic"></i></button>
+            <div class="faq-a"><p>UI/UX design, branding, product strategy, Webflow/Framer builds and full-stack development — <br>everything you need to launch and scale a digital product.</p></div>
+          </div>
+          <div class="faq reveal" data-r="up" style="--rd:.12s">
+            <button class="faq-q"><span>What is the usual project timeline?</span><i class="faq-ic"></i></button>
+            <div class="faq-a"><p>Landing pages usually ship in 1–2 weeks, while full SaaS dashboards and apps take 3–6 weeks <br>depending on scope and feedback cycles.</p></div>
+          </div>
+          <div class="faq reveal" data-r="up" style="--rd:.18s">
+            <button class="faq-q"><span>What pricing models we have?</span><i class="faq-ic"></i></button>
+            <div class="faq-a"><p>Flexible monthly or quarterly plans — Essentials, Growth Mode and Visionary — plus custom <br>fixed-scope sprints for one-off launches.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer id="contact">
+        <div class="abs" style="left:0;top:8630px;width:1440px;height:703px;background:#00071C"></div>
+        <img class="abs footer-shape" src="assets/img/footer-shape.svg" alt="" style="left:977px;top:9043px;width:621px;height:574px" />
+        <div class="abs blob-xl" style="left:-46px;top:9271px;width:1533px;height:122px;background:#1A45C8"></div>
+        <div class="abs blob-xl" style="left:-469px;top:8748px;width:2379px;height:82px;background:rgba(255,46,95,.5)"></div>
+
+        <div class="abs partners" style="left:181px;top:8740px">
+          <div class="partner reveal" data-r="up" style="width:136px;height:54px"><img src="assets/img/partner-webflow.svg" alt="Webflow" style="left:21px;top:0;width:95px;height:24px" /><span style="top:36px">Professional partner</span></div>
+          <div class="partner reveal" data-r="up" style="width:136px;height:54px;--rd:.06s"><img src="assets/img/partner-framer.svg" alt="Framer" style="left:31px;top:0;width:74.71px;height:24px" /><span style="top:36px">Professional partner</span></div>
+          <div class="partner reveal" data-r="up" style="width:84px;height:52px;--rd:.12s"><img src="assets/img/partner-clutch.svg" alt="Clutch" style="left:8px;top:0;width:67.87px;height:19.3px" /><span style="top:34px">Reviewed on</span></div>
+          <div class="partner reveal" data-r="up" style="width:84px;height:54px;--rd:.18s"><img src="assets/img/partner-google.svg" alt="Google" style="left:5px;top:0;width:73.22px;height:24px" /><span style="top:36px">Reviewed on</span></div>
+          <div class="partner reveal" data-r="up" style="width:143px;height:51px;--rd:.24s"><img src="assets/img/partner-behance.svg" alt="Behance" style="left:23px;top:0;width:97.14px;height:18.02px" /><span style="top:33px">Top Team on Behance</span></div>
+        </div>
+
+        <p class="abs f-desc reveal" data-r="up" style="left:100px;top:8973px;--rd:.06s">An Experience Design Agency focusing on <br>building functional, simple, human-centered digital <br>products for future.</p>
+        <a href="#home" data-link class="abs btn-footer reveal magnetic" data-r="up" style="left:100px;top:9063px;width:164px;height:48px;--rd:.12s">Contact Us Now</a>
+
+        <div class="abs f-col reveal" data-r="up" style="left:622px;top:8931px"><h5>Important Links</h5><a href="#home" data-link>Home</a><a href="#about" data-link>About Us</a><a href="#works" data-link>Projects</a><a href="#pricing" data-link>Pricing</a><a href="#contact" data-link>Contact</a></div>
+        <div class="abs f-col reveal" data-r="up" style="left:861px;top:8931px;--rd:.06s"><h5>Services</h5><a href="#services" data-link>UI/UX Design</a><a href="#services" data-link>Web Design</a><a href="#services" data-link>Branding</a><a href="#services" data-link>Webflow</a><a href="#services" data-link>Framer</a></div>
+        <div class="abs f-col reveal" data-r="up" style="left:1061px;top:8931px;--rd:.12s"><h5>Industry</h5><a href="#works" data-link>Fintech</a><a href="#works" data-link>Healthcare</a><a href="#works" data-link>Edtech</a><a href="#works" data-link>Cybersecurity</a><a href="#contact" data-link>Contact</a></div>
+        <div class="abs f-col reveal" data-r="up" style="left:1266px;top:8931px;--rd:.18s"><h5>Others</h5><a href="#works" data-link>Case Study</a><a href="#works" data-link>Products</a><a href="#faq" data-link>Blog</a><a href="#contact" data-link>Careers</a></div>
+
+        <a href="#" class="abs deck" style="left:100px;top:9275px"><span class="deck-ic"><img src="assets/img/download.svg" alt="" /></span>Company Deck</a>
+        <p class="abs copyright" style="left:598px;top:9278px">© 2025, Atish Chakma, All Rights Reserved.</p>
+        <a href="#" class="abs social" style="left:1178px;top:9276px" aria-label="Facebook"><img src="assets/img/social-facebook.svg" alt="" /></a>
+        <a href="#" class="abs social" style="left:1222px;top:9276px" aria-label="X"><img src="assets/img/social-x.svg" alt="" /></a>
+        <a href="#" class="abs social" style="left:1266px;top:9276px" aria-label="Dribbble"><img src="assets/img/social-dribbble.svg" alt="" /></a>
+        <a href="#" class="abs social" style="left:1310px;top:9276px" aria-label="Instagram"><img src="assets/img/social-instagram.svg" alt="" /></a>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
